@@ -22,7 +22,7 @@ class _BottomNavBarState extends State<BottomBar> {
         border: Border(
             top: BorderSide(color: const Color(0xFFF5F5F5).withOpacity(0.14))),
       ),
-      padding: const EdgeInsets.fromLTRB(30, 7, 30, 22),
+      padding: const EdgeInsets.fromLTRB(50, 7, 50, 22),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
