@@ -28,12 +28,11 @@ class _BottomNavBarState extends State<BottomBar> {
         children: [
           InkWell(
             onTap: () {
-              if (page != EPageOnSelect.home) {
-                Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (_) => const HomePage()),
-                    (route) => false);
-              }
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (_) => const HomePage()),
+                  (route) => false);
+
               page = EPageOnSelect.home;
               setState(() {});
             },
@@ -63,12 +62,11 @@ class _BottomNavBarState extends State<BottomBar> {
           ),
           InkWell(
             onTap: () {
-              if (page != EPageOnSelect.settings) {
-                Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (_) => const SettingsPage()),
-                    (route) => false);
-              }
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SettingsPage()),
+                  (route) => false);
+
               page = EPageOnSelect.settings;
 
               setState(() {});
